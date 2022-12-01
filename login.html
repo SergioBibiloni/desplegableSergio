@@ -1,49 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
+  <!-- Head -->
   <head>
+    <!-- Metas varios -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Desplegable - Kike</title>
+    <!-- Título-->
+    <title>Desplegable</title>
+    <!-- Link css a normalize -->
     <link rel="stylesheet" href="css/normalize.css" />
+    <!-- Link css a estilos -->
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
+  <!-- Body -->
   <body>
+    <!-- Div container principal -->
     <div class="login_container">
+      <!-- Section para el menu desplegable -->
       <section class="menudesplegable">
+        <!-- Input checkbox para detectar cuando clican en el desplegable -->
         <input type="checkbox" id="burger" />
-        <label for="burger"
-          ><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+        <!-- Label para el icono "hamburguer" -->
+        <label for="burger">
+          <!-- Svg con imagen de menu hamburguer -->
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
             <path
-              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"
-            /></svg
-        ></label>
+              d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/>
+            </svg>
+          </label>
+          <!-- Lista de menu desplegable ul -->
         <ul class="desplegable">
+          <!-- li inicio con referencia a la pagina de inicio -->
           <a href="index.html"><li>Inicio</li></a>
           <li>About Us</li>
           <li>Productos</li>
           <li>Contacto</li>
         </ul>
+        <!-- Fin de section menu desplegable -->
       </section>
-
+      <!-- Section para el sobretitulo -->
       <section class="titulo">
+        <!-- h3 con sobretitulo con br para la colocación correcta del texto -->
         <h3>
-          INTELLIGENT <br />
+          INTELLIGENT <br/>
           INVESTMENT MANAGEMENT
         </h3>
       </section>
-
+      <!-- Section para logo svg y titulo principal -->
       <section class="loginlogo">
+        <!-- img svg con titulo -->
         <img src="./img/svg/hexagonoGreen.svg" />MarketsFlow
       </section>
-
+      <!-- section  para texto urmoney-->
       <section class="urmoney">
         <h3>Your money works</h3>
       </section>
-
+      <!-- section con formulario para introducir email y contraseña -->
       <section class="formulariologin">
+        <!-- form sin action ni method -->
         <form action="" method="">
           <article class="botones">
+            <!-- input para email -->
             <input
               class="inputlogin"
               type="email"
@@ -51,7 +69,7 @@
               placeholder="Email"
               required
             />
-
+            <!-- input para password -->
             <input
               class="inputpassword"
               type="password"
@@ -63,11 +81,11 @@
           </article>
         </form>
       </section>
-
+      <!-- section discover -->
       <section class="discover">
         <h3>Discover More</h3>
       </section>
-
+      <!-- section copy -->
       <section class="copyright">
         <p>
           Authorised and regulated by the <br />Financial Conduct Authority (FCA
