@@ -1,0 +1,225 @@
+html {
+  font-size: 16px;
+}
+* {
+  box-sizing: border-box;
+}
+/* Color fondo index.html (Container NO Body) */
+.container {
+  background-color: var(--color_verdeBase);
+  height: 100vh;
+}
+/* Variables */
+:root {
+  /* Colores */
+  --color_verdeBase: #59d9b5;
+  --color_verdeOscuro: #01402e;
+  --color_verdeClaro: #b3f2e0;
+  --color_verdeMuyClaro: #d0f2e9;
+  --color_grisFondo: #fafcfe;
+  /* Márgenes */
+  --margen_paddingGeneral: 30px;
+  --margen_paddingBotones: 8px 10px;
+  --margen_separacionSections: 80px;
+  --margen_curvaBoton: 24px;
+  /* Fuentes */
+  --fuente_Base: Arial;
+  --fuente_BaseTamanyo: 1rem;
+  --fuente_h1: 2rem;
+  --fuente_h2: 1.5rem;
+  --fuente_h3: 1.3rem;
+  --fuente_botones: var(--fuente_h3);
+  --fuente_parrafos: var(--fuente_BaseTamanyo);
+}
+
+/* Hago invisible el checkbox */
+
+input {
+  display: none;
+}
+
+/* Hago invisbile la lista (por el momento) */
+
+.desplegable {
+  display: none;
+  width: 100vw;
+  height: 100vh;
+  background-color: var(--color_verdeOscuro);
+}
+
+label {
+  position: absolute;
+  top: var(--margen_paddingGeneral);
+  left: var(--margen_paddingGeneral);
+}
+
+/* Cuando el input checkbox esta 'checked' ~ ul se muestra :) */
+input:checked ~ .desplegable {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-size: var(--fuente_h3);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(238, 238, 238);
+  padding: 30px 0 30px 0;
+}
+
+/* Icono de las tres barras (Más pequeño que si no es un avión) */
+svg {
+  width: 32px;
+}
+
+/* Quito decoracion de los elementos de la lista */
+
+ul {
+  list-style: none;
+}
+
+/* Fuera margenes y padding */
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 0;
+  margin: 0;
+}
+
+/* Logo central */
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color_grisFondo);
+  font-size: var(--fuente_h1);
+}
+
+.logo > img {
+  width: 40px;
+  filter: invert();
+}
+
+.menudesplegable {
+  position: absolute;
+  z-index: 2;
+}
+
+/* Estilos Login */
+
+.titulo {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  padding-top: 100px;
+}
+
+/* Estilo h3 */
+
+h3 {
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color_verdeBase);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.login_container {
+  display: flex;
+  background-color: white;
+  height: 100vh;
+  flex-direction: column;
+}
+
+.loginlogo {
+  padding-top: 40px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  color: var(--color_verdeOscuro);
+  font-size: var(--fuente_h1);
+  font-weight: bold;
+}
+
+.loginlogo > img {
+  width: 40px;
+  margin-right: 5px;
+}
+
+.urmoney {
+  display: flex;
+  justify-content: center;
+}
+.urmoney > h3 {
+  font-size: 14px;
+  color: rgb(196, 196, 196);
+  font-weight: lighter;
+}
+
+/* Inputs del LogIn (Antes botones...)*/
+
+.botones {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+  flex-direction: column;
+}
+.inputlogin {
+  display: block;
+  width: 80vw;
+  height: 48px;
+  border-radius: 24px;
+  background-color: var(--color_verdeBase);
+  border: none;
+}
+.inputpassword {
+  margin-top: 10px;
+  display: block;
+  width: 80vw;
+  height: 48px;
+  border-radius: 24px;
+  background-color: rgb(232, 230, 230);
+  border: none;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  text-align: center;
+}
+
+.inputlogin::placeholder {
+  color: var(--color_grisFondo);
+}
+
+.inputpassword::placeholder {
+  color: var(--color_verdeOscuro);
+}
+
+.discover{
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.copyright{
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: small;
+  color: rgb(212, 210, 210);
+}
+
+/* Estilos de las 'a' fuera!! */
+
+a{
+  text-decoration: none;
+  font-size: var(--fuente_h3);
+  font-family: Arial, Helvetica, sans-serif;
+  color: rgb(238, 238, 238);
+}
